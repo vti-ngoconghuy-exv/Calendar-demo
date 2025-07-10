@@ -501,7 +501,7 @@
                                                                             "value": "secondary"
                                                                         }
                                                                     },
-                                                                    "slot": "middle-header-btns",
+                                                                    "slot": "right-header-btns",
                                                                     "styles": null
                                                                 }
                                                             ]
@@ -6159,14 +6159,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-07-09 04:40:34</sys_created_on>
         <sys_id>06272276832ae2104d955ec6feaad3cb</sys_id>
-        <sys_mod_count>22</sys_mod_count>
+        <sys_mod_count>23</sys_mod_count>
         <sys_name>home</sys_name>
         <sys_package display_value="Calendar_Demo" source="x_1793908_calendar">cf46a15e83ea22104d955ec6feaad3ae</sys_package>
         <sys_policy/>
         <sys_scope display_value="Calendar_Demo">cf46a15e83ea22104d955ec6feaad3ae</sys_scope>
         <sys_update_name>sys_ux_macroponent_06272276832ae2104d955ec6feaad3cb</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-07-09 08:18:10</sys_updated_on>
+        <sys_updated_on>2025-07-10 03:07:54</sys_updated_on>
     </sys_ux_macroponent>
     <sys_translated_text action="delete_multiple" query="documentkey=06272276832ae2104d955ec6feaad3cb"/>
 </record_update>
