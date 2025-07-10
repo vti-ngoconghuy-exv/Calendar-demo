@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="c3eae77e836ee2104d955ec6feaad346" label="予定情報" max_length="40" name="x_1793908_calendar_t_yotei_joho" type="collection">
+        <element choice="3" label="予定ステータス" max_length="40" name="u_yotei_status" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="仮" sequence="2" value="仮"/>
+                <element inactive_on_update="false" label="確定" language="ja" sequence="1" value="確定"/>
+                <element inactive_on_update="false" label="仮" language="ja" sequence="2" value="仮"/>
+                <element inactive_on_update="false" label="確定" sequence="1" value="確定"/>
+            </choice>
+        </element>
+        <element label="添付ファイル2" max_length="40" name="u_tenpu_fairu2" type="file_attachment"/>
+        <element label="終了日" max_length="40" name="u_shuryobi" type="glide_date"/>
+        <element choice="3" label="予定種別" max_length="40" name="u_yotei_shubetsu" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="個人" language="ja" sequence="0" value="個人"/>
+                <element inactive_on_update="false" label="個人" sequence="0" value="個人"/>
+                <element inactive_on_update="false" label="組織" language="ja" sequence="1" value="組織"/>
+                <element inactive_on_update="false" label="組織" sequence="1" value="組織"/>
+            </choice>
+        </element>
+        <element label="添付ファイル3" max_length="40" name="u_tenpu_fairu3" type="file_attachment"/>
+        <element label="開始日" max_length="40" name="u_kaishibi" type="glide_date"/>
+        <element label="添付ファイル" max_length="40" name="u_tenpu_fairu" type="file_attachment"/>
+    </element>
+</database>

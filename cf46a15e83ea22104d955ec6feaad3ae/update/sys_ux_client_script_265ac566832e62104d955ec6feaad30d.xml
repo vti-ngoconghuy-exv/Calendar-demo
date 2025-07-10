@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_client_script">
+    <sys_ux_client_script action="INSERT_OR_UPDATE">
+        <controller_preset/>
+        <includes/>
+        <macroponent display_value="Home">2037a99e83ea22104d955ec6feaad34d</macroponent>
+        <name>View change</name>
+        <preset/>
+        <required_translations>[]</required_translations>
+        <script><![CDATA[/**
+* @param {params} params
+* @param {api} params.api
+* @param {any} params.event
+* @param {any} params.imports
+* @param {ApiHelpers} params.helpers
+*/
+function handler({api, event, helpers, imports}) {
+    const test = g_document.getElements(".grid-cell.current-month.clickable");
+    console.log(test);
+    
+    const isMonth = event.payload.to === 'MONTH';
+    console.log("month:", isMonth);
+
+    const calendar = document.querySelector('now-calendar');
+    console.log("calendar", calendar);
+
+    
+
+    if (isMonth === false) {
+        return;
+    }
+
+    const markSpans = api.state.holiday_event;
+
+
+    function areDatesSameDayByParts(date1, date2) {
+        return date1.getFullYear() === date2.getFullYear() &&
+           date1.getMonth() === date2.getMonth() &&
+           date1.getDate() === date2.getDate();
+    }
+
+    function highlightSatSunInNowCalendar(bgColorSaturday = '#e3f2fd', bgColorSunday = '#ffebee') {
+
+    }
+
+    function findCellByDate(root, targetDateStr) {
+        const cells = g_document.getElements('.grid-cell.current-month.clickable');
+        for (const cell of cells) {
+            
+
+            // const aria = cell.getAttribute('aria-label'); // VD: "Tuesday, September 9 2025"
+            // if (aria) {
+            //     // Parse aria-label ra yyyy-mm-dd
+            //     const date = new Date(aria);
+            //     if (date === targetDateStr) {
+            //         return cell;
+            //     }
+            // }
+        }
+        return null;
+    }
+
+    for (const item of markSpans) {
+        
+    }
+
+
+    
+    console.log('mark spans', JSON.stringify(markSpans, null, 4));
+}]]></script>
+        <script_api_version>2.0.0</script_api_version>
+        <sys_class_name>sys_ux_client_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-08 03:45:07</sys_created_on>
+        <sys_id>265ac566832e62104d955ec6feaad30d</sys_id>
+        <sys_mod_count>23</sys_mod_count>
+        <sys_name>View change</sys_name>
+        <sys_package display_value="Calendar_Demo" source="x_1793908_calendar">cf46a15e83ea22104d955ec6feaad3ae</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Calendar_Demo">cf46a15e83ea22104d955ec6feaad3ae</sys_scope>
+        <sys_update_name>sys_ux_client_script_265ac566832e62104d955ec6feaad30d</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-09 03:51:04</sys_updated_on>
+        <target>macroponent</target>
+        <type>default</type>
+    </sys_ux_client_script>
+</record_update>

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_client_script">
+    <sys_ux_client_script action="INSERT_OR_UPDATE">
+        <controller_preset/>
+        <includes/>
+        <macroponent display_value="home">06272276832ae2104d955ec6feaad3cb</macroponent>
+        <name>Holiday event</name>
+        <preset/>
+        <required_translations>[]</required_translations>
+        <script><![CDATA[/**
+ * @param {params} params
+ * @param {api} params.api
+ * @param {any} params.event
+ * @param {any} params.imports
+ * @param {ApiHelpers} params.helpers
+ */
+function handler({
+    api,
+    event,
+    helpers,
+    imports
+}) {
+    //祝日管理テーブルからデータを取得
+    var holiday_event = api.data.Holiday_Event.results;
+    // 週末イベントJSON情報を組み合わせ
+    const events = [{
+            "$$mid": 3,
+            "bgColor": "#ffe6e6",
+            "block": false,
+            "occurrenceDays": [
+                6
+            ],
+            "timezone": "Japan",
+            "title": "週末",
+            "zones": [{
+                "endTime": "23:59:59",
+                "startTime": "00:00:00"
+            }]
+        },
+        {
+            "$$mid": 3,
+            "bgColor": "#ffe6e6",
+            "block": false,
+            "occurrenceDays": [
+                0
+            ],
+            "timezone": "Japan",
+            "title": "週末",
+            "zones": [{
+                "endTime": "23:59:59",
+                "startTime": "00:00:00"
+            }]
+        }
+    ];
+    //取得日付によって、曜日は数字に変換
+    function getDayOfWeekNumber(dateStr) {
+        var dateParts = dateStr.split("-");
+        var dateObj = new Date(Date.UTC(
+            parseInt(dateParts[0]), // year
+            parseInt(dateParts[1]) - 1, // month
+            parseInt(dateParts[2]) // day
+        ));
+        return dateObj.getUTCDay(); // 0=日, 6=土
+    }
+
+    // 祝日JSON情報を組み合わせ
+    function createWeekendEventJSON(holidayDate, title, occurrenceDays) {
+
+        return {
+            "$$mid": 3,
+            "bgColor": "#ffe6e6",
+            "block": false,
+            "startDate": holidayDate,
+            "endDate": holidayDate,
+            "occurrenceDays": occurrenceDays,
+            "timezone": "Japan",
+            "title": title,
+            "zones": [{
+                "startTime": "00:00:00",
+                "endTime": "23:59:59"
+            }]
+        };
+    }
+    //祝日管理テーブルからデータを取得し、初期値を組み合わせ
+    for (var i = 0; i < holiday_event.length; i++) {
+        var holidayDate = holiday_event[i].u_hiduke.value;
+        var number = getDayOfWeekNumber(holidayDate);
+        var title = holiday_event[i].u_meisho.value;
+        var occurrenceDays = "[" + number + "]";
+        // オブジェクトを作成して配列に追加
+        const eventObj = createWeekendEventJSON(holidayDate, title, occurrenceDays);
+        events.push(eventObj);
+
+    }
+    // JSON文字列に変換
+    const result = JSON.stringify(events);
+    // 出力
+    api.setState("holiday_event", result);
+}]]></script>
+        <script_api_version>2.0.0</script_api_version>
+        <sys_class_name>sys_ux_client_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-09 05:05:13</sys_created_on>
+        <sys_id>db27aaf2832ae2104d955ec6feaad3f0</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Holiday event</sys_name>
+        <sys_package display_value="Calendar_Demo" source="x_1793908_calendar">cf46a15e83ea22104d955ec6feaad3ae</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Calendar_Demo">cf46a15e83ea22104d955ec6feaad3ae</sys_scope>
+        <sys_update_name>sys_ux_client_script_db27aaf2832ae2104d955ec6feaad3f0</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-09 05:05:13</sys_updated_on>
+        <target>macroponent</target>
+        <type>default</type>
+    </sys_ux_client_script>
+</record_update>

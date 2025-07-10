@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_client_script">
+    <sys_ux_client_script action="INSERT_OR_UPDATE">
+        <controller_preset/>
+        <includes/>
+        <macroponent display_value="Home">2037a99e83ea22104d955ec6feaad34d</macroponent>
+        <name>calendar_1/now_default/contextDate</name>
+        <preset/>
+        <required_translations>[]</required_translations>
+        <script><![CDATA[/**
+  * @param {params} params
+  * @param {api} params.api
+  * @param {TransformApiHelpers} params.helpers
+  */
+function evaluateProperty({api, helpers}) {
+        const date = new Date();
+        const timestamp = date.getTime();
+        return timestamp;
+}]]></script>
+        <script_api_version>2.0.0</script_api_version>
+        <sys_class_name>sys_ux_client_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-07 12:28:52</sys_created_on>
+        <sys_id>cd6c7112836e22104d955ec6feaad3ab</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>calendar_1/now_default/contextDate</sys_name>
+        <sys_package display_value="Calendar_Demo" source="x_1793908_calendar">cf46a15e83ea22104d955ec6feaad3ae</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Calendar_Demo">cf46a15e83ea22104d955ec6feaad3ae</sys_scope>
+        <sys_update_name>sys_ux_client_script_cd6c7112836e22104d955ec6feaad3ab</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-07 12:28:52</sys_updated_on>
+        <target>macroponent</target>
+        <type>transform</type>
+    </sys_ux_client_script>
+</record_update>

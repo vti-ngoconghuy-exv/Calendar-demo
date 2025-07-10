@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_client_script">
+    <sys_ux_client_script action="INSERT_OR_UPDATE">
+        <controller_preset/>
+        <includes/>
+        <macroponent display_value="home">06272276832ae2104d955ec6feaad3cb</macroponent>
+        <name>Logging</name>
+        <preset/>
+        <required_translations>[]</required_translations>
+        <script><![CDATA[/**
+* @param {params} params
+* @param {api} params.api
+* @param {any} params.event
+* @param {any} params.imports
+* @param {ApiHelpers} params.helpers
+*/
+function handler({api, event, helpers, imports}) {
+    console.log(JSON.stringify(api.context.session.properties, null, 4));
+}]]></script>
+        <script_api_version>2.0.0</script_api_version>
+        <sys_class_name>sys_ux_client_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-09 05:05:13</sys_created_on>
+        <sys_id>5f27aaf2832ae2104d955ec6feaad3f0</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Logging</sys_name>
+        <sys_package display_value="Calendar_Demo" source="x_1793908_calendar">cf46a15e83ea22104d955ec6feaad3ae</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Calendar_Demo">cf46a15e83ea22104d955ec6feaad3ae</sys_scope>
+        <sys_update_name>sys_ux_client_script_5f27aaf2832ae2104d955ec6feaad3f0</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-09 05:05:13</sys_updated_on>
+        <target>macroponent</target>
+        <type>default</type>
+    </sys_ux_client_script>
+</record_update>

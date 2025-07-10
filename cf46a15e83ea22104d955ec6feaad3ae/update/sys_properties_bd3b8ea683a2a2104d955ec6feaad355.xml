@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_properties">
+    <sys_properties action="INSERT_OR_UPDATE">
+        <choices/>
+        <description>Enable MariaDB INSTANT ALTER algorithms on the Now Platform</description>
+        <ignore_cache>false</ignore_cache>
+        <is_private>false</is_private>
+        <name>glide.db.instant_alter.enabled</name>
+        <read_roles/>
+        <suffix/>
+        <sys_class_name>sys_properties</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-08 08:00:00</sys_created_on>
+        <sys_id>bd3b8ea683a2a2104d955ec6feaad355</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>glide.db.instant_alter.enabled</sys_name>
+        <sys_package display_value="Calendar_Demo" source="x_1793908_calendar">cf46a15e83ea22104d955ec6feaad3ae</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Calendar_Demo">cf46a15e83ea22104d955ec6feaad3ae</sys_scope>
+        <sys_update_name>sys_properties_bd3b8ea683a2a2104d955ec6feaad355</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-08 08:00:00</sys_updated_on>
+        <type>boolean</type>
+        <value>true</value>
+        <write_roles/>
+    </sys_properties>
+    <sys_translated_text action="delete_multiple" query="documentkey=bd3b8ea683a2a2104d955ec6feaad355"/>
+</record_update>

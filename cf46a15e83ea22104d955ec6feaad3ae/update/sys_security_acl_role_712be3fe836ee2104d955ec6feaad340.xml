@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role">
+    <sys_security_acl_role action="INSERT_OR_UPDATE">
+        <sys_class_name>sys_security_acl_role</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-09 09:37:39</sys_created_on>
+        <sys_id>712be3fe836ee2104d955ec6feaad340</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_1793908_calendar_t_yotei_joho.x_1793908_calendar._user</sys_name>
+        <sys_package display_value="Calendar_Demo" source="x_1793908_calendar">cf46a15e83ea22104d955ec6feaad3ae</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Calendar_Demo">cf46a15e83ea22104d955ec6feaad3ae</sys_scope>
+        <sys_security_acl display_value="x_1793908_calendar_t_yotei_joho">3d2be3fe836ee2104d955ec6feaad33a</sys_security_acl>
+        <sys_update_name>sys_security_acl_role_712be3fe836ee2104d955ec6feaad340</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-09 09:37:39</sys_updated_on>
+        <sys_user_role display_value="x_1793908_calendar._user" name="x_1793908_calendar._user">412df19a836e22104d955ec6feaad37d</sys_user_role>
+    </sys_security_acl_role>
+</record_update>

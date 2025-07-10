@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="" label="祝日管理" language="en" table="x_1793908_calendar_t_shukujitsu_kanri">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element/>
+            <help/>
+            <hint/>
+            <label>祝日管理</label>
+            <language>en</language>
+            <name>x_1793908_calendar_t_shukujitsu_kanri</name>
+            <plural>祝日管理s</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-07-07 12:20:04</sys_created_on>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>祝日管理</sys_name>
+            <sys_package display_value="Calendar_Demo" source="x_1793908_calendar">cf46a15e83ea22104d955ec6feaad3ae</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Calendar_Demo">cf46a15e83ea22104d955ec6feaad3ae</sys_scope>
+            <sys_update_name>sys_documentation_x_1793908_calendar_t_shukujitsu_kanri__en</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-07-07 12:20:04</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

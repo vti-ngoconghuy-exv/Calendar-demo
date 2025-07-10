@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_client_script">
+    <sys_ux_client_script action="DELETE">
+        <controller_preset/>
+        <includes/>
+        <macroponent display_value="home">06272276832ae2104d955ec6feaad3cb</macroponent>
+        <name>list_1/now_default/isHidden</name>
+        <preset/>
+        <required_translations>[]</required_translations>
+        <script><![CDATA[/**
+  * @param {params} params
+  * @param {api} params.api
+  * @param {TransformApiHelpers} params.helpers
+  */
+function evaluateProperty({api, helpers}) {
+	return !api.state.viewModeCalendar;
+}]]></script>
+        <script_api_version>2.0.0</script_api_version>
+        <sys_class_name>sys_ux_client_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-09 08:07:21</sys_created_on>
+        <sys_id>820acbb283eae2104d955ec6feaad32a</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>list_1/now_default/isHidden</sys_name>
+        <sys_package display_value="Calendar_Demo" source="x_1793908_calendar">cf46a15e83ea22104d955ec6feaad3ae</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Calendar_Demo">cf46a15e83ea22104d955ec6feaad3ae</sys_scope>
+        <sys_update_name>sys_ux_client_script_820acbb283eae2104d955ec6feaad32a</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-09 08:12:54</sys_updated_on>
+        <target>macroponent</target>
+        <type>transform</type>
+    </sys_ux_client_script>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Calendar_Demo">cf46a15e83ea22104d955ec6feaad3ae</application>
+        <file_path/>
+        <instance_id>b204b64c1b4a75541024eb9b2d4bcb9c</instance_id>
+        <instance_name>dev189092</instance_name>
+        <name>sys_ux_client_script_820acbb283eae2104d955ec6feaad32a</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_ux_client_script"&gt;&lt;sys_ux_client_script action="INSERT_OR_UPDATE"&gt;&lt;controller_preset/&gt;&lt;includes/&gt;&lt;macroponent display_value="home"&gt;06272276832ae2104d955ec6feaad3cb&lt;/macroponent&gt;&lt;name&gt;list_1/now_default/isHidden&lt;/name&gt;&lt;preset/&gt;&lt;required_translations&gt;[]&lt;/required_translations&gt;&lt;script&gt;&lt;![CDATA[/**
+  * @param {params} params
+  * @param {api} params.api
+  * @param {TransformApiHelpers} params.helpers
+  */
+function evaluateProperty({api, helpers}) {
+	return !api.state.viewModeCalendar;
+}]]&gt;&lt;/script&gt;&lt;script_api_version&gt;2.0.0&lt;/script_api_version&gt;&lt;sys_class_name&gt;sys_ux_client_script&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-07-09 08:07:21&lt;/sys_created_on&gt;&lt;sys_id&gt;820acbb283eae2104d955ec6feaad32a&lt;/sys_id&gt;&lt;sys_mod_count&gt;3&lt;/sys_mod_count&gt;&lt;sys_name&gt;list_1/now_default/isHidden&lt;/sys_name&gt;&lt;sys_package display_value="Calendar_Demo" source="x_1793908_calendar"&gt;cf46a15e83ea22104d955ec6feaad3ae&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Calendar_Demo"&gt;cf46a15e83ea22104d955ec6feaad3ae&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_ux_client_script_820acbb283eae2104d955ec6feaad32a&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-07-09 08:12:54&lt;/sys_updated_on&gt;&lt;target&gt;macroponent&lt;/target&gt;&lt;type&gt;transform&lt;/type&gt;&lt;/sys_ux_client_script&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-790299328</payload_hash>
+        <record_name>list_1/now_default/isHidden</record_name>
+        <reverted_from/>
+        <source>5e66aaf2832ae2104d955ec6feaad3e6</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-09 08:12:54</sys_created_on>
+        <sys_id>18c71b76832ee2104d955ec6feaad35d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>197ee3ead0c0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-09 08:12:54</sys_updated_on>
+        <type>UX Client Script</type>
+        <update_guid>dcc71b760c2ee2105019fd768c50a55c</update_guid>
+        <update_guid_history>dcc71b760c2ee2105019fd768c50a55c:-790299328,47761ff24f2ee210bcfca8fee45b5a67:-801957234</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-09 08:16:34</sys_created_on>
+        <sys_db_object display_value="" name="sys_ux_client_script">sys_ux_client_script</sys_db_object>
+        <sys_id>0b0551ed422042409c214ac1682e3990</sys_id>
+        <sys_metadata>820acbb283eae2104d955ec6feaad32a</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>list_1/now_default/isHidden</sys_name>
+        <sys_package display_value="Calendar_Demo" source="x_1793908_calendar">cf46a15e83ea22104d955ec6feaad3ae</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Calendar_Demo">cf46a15e83ea22104d955ec6feaad3ae</sys_scope>
+        <sys_scope_delete display_value="">121fbd246f3442d89498c94ee1f1a310</sys_scope_delete>
+        <sys_update_name>sys_ux_client_script_820acbb283eae2104d955ec6feaad32a</sys_update_name>
+        <sys_update_version display_value="sys_ux_client_script_820acbb283eae2104d955ec6feaad32a">18c71b76832ee2104d955ec6feaad35d</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-09 08:16:34</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
